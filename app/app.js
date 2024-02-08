@@ -1,5 +1,3 @@
-// Variable
-
 // Functions
 function getComputerChoice() {
   const selection = ["rock", "paper", "scissors"];
@@ -31,13 +29,15 @@ function playRound(playerSelection, computerSelection) {
       computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)
     }`;
   }
-  console.log(result);
   return result;
 }
 
-const playerSelection = "Rock";
-const computerSelection = getComputerChoice();
+function playGame() {
+  for (let i = 1; i <= 5; i++) {
+    let choice = prompt("Choose your weapon!");
+    let roundScore = playRound(choice, getComputerChoice());
+    document.getElementById("score" + i).innerHTML = roundScore;
+  }
+}
 
-playRound(playerSelection, computerSelection);
-/* let result = getComputerChoice();
-document.getElementById("test").innerHTML = result; */
+playGame();
