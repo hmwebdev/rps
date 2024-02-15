@@ -39,7 +39,7 @@ function playGame() {
       let roundScore = playRound(choice, getComputerChoice());
       document.getElementById("score" + i).innerHTML = roundScore;
     } else {
-      alert("Please enter a valid value (rock, paper, scissor");
+      alert("Please enter a valid value (rock, paper, scissor)");
     }
   }
 }
