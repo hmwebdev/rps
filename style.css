@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: #f0ebd8;
+}
+
+h1,
+h2 {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #0d1321;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  width: 30%;
+  height: 300px;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0d1321;
+}
+
+#btnplayagain {
+  background-color: #748cab;
+  border: none;
+  color: #f0ebd8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btnplayagain:hover {
+  cursor: pointer;
+}

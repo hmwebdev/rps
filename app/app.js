@@ -1,3 +1,7 @@
+// Watcher of the skies
+
+document.getElementById("btnplayagain").addEventListener("click", playGame);
+
 // Functions
 function getComputerChoice() {
   const selection = ["rock", "paper", "scissors"];
@@ -25,7 +29,9 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection.toLowerCase() === computerSelection) {
     result = "Equal!";
   } else {
-    result = `You Lost! ${computerSelection} beats ${
+    result = `You Lost! ${
+      computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)
+    } beats ${
       playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
     }`;
   }
@@ -40,6 +46,7 @@ function playGame() {
       document.getElementById("score" + i).innerHTML = roundScore;
     } else {
       alert("Please enter a valid value (rock, paper, scissor)");
+      continue;
     }
   }
 }
